@@ -3,10 +3,10 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'  
-        DOCKER_IMAGE = 'cithit/Subletb'                                   //<-----change this to your MiamiID!
+        DOCKER_IMAGE = 'cithit/subletb'                                   //<-----change this to your MiamiID!
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/subletb/225-lab4-1.git'     //<-----change this to match this new repository!
-        KUBECONFIG = credentials('Subletb-225')                           //<-----change this to match your kubernetes credentials (MiamiID-225)! 
+        KUBECONFIG = credentials('subletb-225')                           //<-----change this to match your kubernetes credentials (MiamiID-225)! 
     }
 
     stages {
